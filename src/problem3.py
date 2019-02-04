@@ -255,9 +255,11 @@ def problem3b(m, point1):
         point1=rg.Point(point1.x,point1.y+(60*k))
         var=problem3a(window1, point1,(2*k)+3)
         thiccqueness=thiccqueness+var
+
+    window1.close_on_mouse_click()
     return thiccqueness
 
-    window1.close_on_mouse_click() #says code is unreachable????
+
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
