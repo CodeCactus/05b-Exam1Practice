@@ -349,6 +349,7 @@ def problem0c(circle, n, window):
     for k in range (n):
         window.render(1 / 2)
         circles=rg.Circle(rg.Point(circle.center.x+(2*(k+1)*circle.radius),circle.center.y),circle.radius)
+        circles.fill_color=circle.fill_color
         circles.attach_to(window)
 
 
