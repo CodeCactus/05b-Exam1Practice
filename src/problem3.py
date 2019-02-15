@@ -167,7 +167,6 @@ def problem3a(window, point, n):
         movey=point.y+(k*10)
         movex=point.x+(k*20)
         line=rg.Line(rg.Point(movex,movey),rg.Point(movex,movey+50))
-        a=line.thickness
         if k < 6:
             line.thickness = 1 + (2 * k)
         else:

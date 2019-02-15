@@ -200,7 +200,9 @@ def problem2b(rect, n, delta, win):
     for k in range(1,n+1):
         rect.attach_to(win)
         win.render()
-        rect=rg.Rectangle(rg.Point(rect.get_lower_left_corner().x-delta,rect.get_lower_left_corner().y+delta),rg.Point(rect.get_upper_right_corner().x+delta,rect.get_upper_right_corner().y-delta))
+        rect=rg.Rectangle(rg.Point(rect.get_lower_left_corner().x-
+        delta,rect.get_lower_left_corner().y+delta),
+        rg.Point(rect.get_upper_right_corner().x+delta,rect.get_upper_right_corner().y-delta))
 
 
 
